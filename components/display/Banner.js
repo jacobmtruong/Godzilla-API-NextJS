@@ -4,6 +4,10 @@ import Link from "next/link";
 import classes from "../display/banner-style.module.css";
 
 function Banner() {
+  const portfolioLink = () => {
+    window.open("https://jacobtruong.com");
+  };
+
   return (
     <div className={classes.bannercontainer}>
       <Image src={icon} alt="godzilaicon" className={classes.iconlogo} />
@@ -13,7 +17,7 @@ function Banner() {
           <span style={{ fontSize: "15px", fontWeight: "0" }}>
             {" "}
             A simple project by{" "}
-            <Link href="/" className={classes.profile}>
+            <Link href="" onClick={portfolioLink} className={classes.profile}>
               Jacob Truong
             </Link>
           </span>
