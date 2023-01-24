@@ -10,44 +10,44 @@ const Linkslist = () => {
         </p>
         <table>
           <thead>
-            <tr>
+            <tr className={classes.tablebox}>
               <th>Field Name</th>
               <th>Description</th>
               <th>Data Type</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr className={classes.tablebox}>
               <td>name</td>
               <td>Monster's name</td>
               <td>String</td>
             </tr>
 
-            <tr>
+            <tr className={classes.tablebox}>
               <td>imgUrl</td>
               <td>Monster's image</td>
               <td>String</td>
             </tr>
 
-            <tr>
+            <tr className={classes.tablebox}>
               <td>firstAppear</td>
               <td>Monster's first appeared on screen</td>
               <td>String</td>
             </tr>
 
-            <tr>
+            <tr className={classes.tablebox}>
               <td>level</td>
               <td>Monster's power level</td>
               <td>String</td>
             </tr>
 
-            <tr>
+            <tr className={classes.tablebox}>
               <td>yearCreated</td>
               <td>Year monster was created</td>
               <td>Number</td>
             </tr>
 
-            <tr>
+            <tr className={classes.tablebox}>
               <td>link</td>
               <td>Monster's descriptive information</td>
               <td>String</td>
@@ -66,20 +66,20 @@ const Linkslist = () => {
         </p>
         <table>
           <thead>
-            <tr>
+            <tr className={classes.tablebox}>
               <th>HTTP Medthod</th>
               <th>Endpoint</th>
               <th>What it does</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr className={classes.tablebox}>
               <td>GET</td>
               <td>/api/monster</td>
               <td>Returns an array of all Monster in our database.</td>
             </tr>
 
-            <tr>
+            <tr className={classes.tablebox}>
               <td>GET</td>
               <td>/api/monster/name/:name</td>
               <td>
@@ -88,7 +88,7 @@ const Linkslist = () => {
               </td>
             </tr>
 
-            <tr>
+            <tr className={classes.tablebox}>
               <td>GET</td>
               <td>/api/monster/year/:year</td>
               <td>

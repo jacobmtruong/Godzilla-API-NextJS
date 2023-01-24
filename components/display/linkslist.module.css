@@ -75,3 +75,16 @@ td:first-child {
   font-size: 25px;
   margin: 10px;
 }
+
+.tablebox th {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: rgba(224, 251, 251, 0.792);
+  font-size: 25px;
+}
+
+.tablebox td {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 20px;
+}
