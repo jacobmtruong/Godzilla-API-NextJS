@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../display/linkslist.module.css";
 
-const LinksList = () => {
+const Linkslist = () => {
   function FieldReference() {
     return (
       <>
