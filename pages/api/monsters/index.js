@@ -11,7 +11,7 @@ const monsters = [
   {
     id: 2,
     name: "Mothra",
-    img: "https://static.wikia.nocookie.net/godzilla/images/0/0e/Godzilla_King_of_the_Monsters_-_Mothra_poster_-_Clear_keyart.jpg/revision/latest?cb=20181219031630",
+    img: "https://godzilla.com/wp-content/uploads/2019/03/05053747/mo_mothra_main.png",
     ability:
       "Mothra can fly anywhere from mach 1 to 5 and usually flies around mach 3. Mothra can create powerful wind gusts using her wings. Mothra can drop reflective scales from her wings that act as a 3-D mirror, reflecting opponents' projectile attacks back at them. The scales also have a poisonous effect on enemies. Using the scales diminishes Mothra's flight ability, and for this reason it is usually used as a weapon of last resort. Using the scales diminishes Mothra's flight ability, and for this reason it is usually used as a weapon of last resort. Mothra is an immortal goddess with similarities to a phoenix. Despite having experienced death on multiple occasions, Mothra is always reincarnated through an egg that she lays through divine methods before anything else in her lifetime. Mothra can launch a barrage of poisonous stingers from her thorax.",
     yearCreated: 1961,
