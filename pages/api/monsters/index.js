@@ -14,5 +14,5 @@ const monsters = [
 ];
 
 export default function handler(req, res) {
-  res.status(200).json({ monsters: monsters });
+  res.status(200).json(monsters);
 }
