@@ -62,14 +62,35 @@ const monsters = [
     firstAppearance: 2019,
     link: "https://godzilla.fandom.com/wiki/Behemoth",
   },
+  {
+    id: 7,
+    name: "King_Kong",
+    img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/godzilla-vs-kong-king-kong-1614031050.png",
+    ability:
+      "Agility,Carnivorous Diet,Durability and stamina, Intelligence,Communication,Senses, Sharp Teeth, Strength and Combat, Weapon Proficiency",
+    firstAppearance: 1962,
+    link: "https://godzilla.fandom.com/wiki/King_Kong_(MonsterVerse)",
+  },
+  {
+    id: 8,
+    name: "Leviathan",
+    img: "http://pm1.narvii.com/7232/33987ec49dbf9bf1976223574872677fa8de70c2r1-519-590v2_uhq.jpg",
+    ability: "n/a",
+    firstAppearance: 1998,
+    link: "https://godzilla.fandom.com/wiki/Leviathan",
+  },
+  {
+    id: 9,
+    name: "Mokele_Mbembe",
+    img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8581dc75-f3df-4e70-9d1e-f113f9e041df/de27y1c-3ce9c4dc-2771-43b4-b562-e4eb6db00a9d.jpg/v1/fill/w_900,h_695,q_75,strp/godzilla_neo___mokele_mbembe_by_kaijusamurai_de27y1c-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njk1IiwicGF0aCI6IlwvZlwvODU4MWRjNzUtZjNkZi00ZTcwLTlkMWUtZjExM2Y5ZTA0MWRmXC9kZTI3eTFjLTNjZTljNGRjLTI3NzEtNDNiNC1iNTYyLWU0ZWI2ZGIwMGE5ZC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.TsaVFWJXQpPC3Np8VwN8qpxpneXIQOSMg7PfbH1cNqk",
+    ability: "Durability, Strength and combat",
+    firstAppearance: 2019,
+    link: "https://godzilla.fandom.com/wiki/Mokele-Mbembe",
+  },
 ];
 
 export function handler(req, res) {
   res.status(200).json({ monsters });
-}
-
-export function getMonsterById(id) {
-  return monsters.find((monster) => monsters.id === id);
 }
 
 // {
