@@ -87,19 +87,52 @@ const monsters = [
     firstAppearance: 2019,
     link: "https://godzilla.fandom.com/wiki/Mokele-Mbembe",
   },
+  {
+    id: 10,
+    name: "MUTO",
+    img: "https://www.scified.com/articles/sh-monsterarts-new-godzilla-muto-figure-21.jpg",
+    ability:
+      "Bio-Atomic Nature, Claws, Durability, Echolocation, Electromagnetic pulse, Fight, Intellience, Metamorphosis, Reforestation, Reproduction, Speed and Agility, Stamina, Strength and Combat",
+    firstAppearance: 2014,
+    link: "https://godzilla.fandom.com/wiki/MUTO",
+  },
+  {
+    id: 11,
+    name: "Na_Kika",
+    img: "https://static.wikia.nocookie.net/godzilla/images/4/4f/Na_Kika_Dominion.jpg/revision/latest?cb=20210501103813",
+    ability:
+      "Camouflage, Intelligence, Regeneration, Sex change, Strength and Combat",
+    firstAppearance: 2019,
+    link: "https://godzilla.fandom.com/wiki/Na_Kika",
+  },
+  {
+    id: 12,
+    name: "Tiamat",
+    img: "https://static.wikia.nocookie.net/godzilla/images/1/10/Tiamat_infobox.jpg/revision/latest?cb=20210424055837",
+    ability:
+      "Amphibious nature, Hydrokinesis, Razor-sharp scales, Strength and Combat, Toxic vapor",
+    firstAppearance: 2019,
+    link: "https://godzilla.fandom.com/wiki/List_of_Godzilla_monsters",
+  },
 ];
+
+console.log(monsters[0].name);
 
 export function handler(req, res) {
   res.status(200).json({ monsters });
 }
 
-// {
-//   id:,
-//   name: '',
-//   img: '',
-//   ability: '',
-//   firstAppearance: ,
-//   link: ''
-// }
+/* 
+
+{
+  id:,
+  name: '',
+  img: '',
+  ability: '',
+  firstAppearance: ,
+  link: ''
+}
+
+*/
 
 export default monsters;
