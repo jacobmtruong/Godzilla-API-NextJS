@@ -116,8 +116,6 @@ const monsters = [
   },
 ];
 
-console.log(monsters[0].name);
-
 export function handler(req, res) {
   res.status(200).json({ monsters });
 }
