@@ -26,6 +26,15 @@ const monsters = [
     yearCreated: 1964,
     link: "https://godzilla.fandom.com/wiki/King_Ghidorah_(MonsterVerse)",
   },
+  {
+    id: 4,
+    name: "Rodan",
+    img: "https://static.wikia.nocookie.net/godzilla/images/9/91/Godzilla_King_of_the_Monsters_-_Rodan_poster_-_Clear_keyart.jpg/revision/latest/scale-to-width-down/1000?cb=20181219031618",
+    ability:
+      "Bio-volcanic nature, Cyclonic drift streams, Extreme heat resistance, Sharp beak, Volcano-agrikinesis",
+    yearCreated: "1956",
+    link: "https://godzilla.fandom.com/wiki/Rodan_(MonsterVerse)",
+  },
 ];
 
 export function handler(req, res) {
