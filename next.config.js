@@ -8,7 +8,8 @@ module.exports = {
     return [
       {
         source: "/api/:path*",
-        destination: "https://api.example.com/:path*",
+        destination:
+          "https://https://godzilla-api-next-js.vercel.app/api/monsters",
       },
     ];
   },
