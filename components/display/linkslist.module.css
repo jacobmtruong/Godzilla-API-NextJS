@@ -6,6 +6,11 @@
   flex-direction: column;
   gap: 50px;
   justify-content: center;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #90a4a5;
+  box-shadow: 5px 5px 5px 5px black;
+  border: none;
 }
 
 .listchildrenone ul:nth-child(2) {
