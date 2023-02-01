@@ -25,7 +25,7 @@ function PlaygroundBanner() {
             </Link>
           </span>
         </h1>
-        <h4 className={classes.logo} style={{ fontSize: "30px" }}>
+        <h4 className={classes.logo} style={{ fontSize: "41px" }}>
           PLAYGROUND
         </h4>
         <button
