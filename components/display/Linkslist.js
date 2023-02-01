@@ -43,8 +43,8 @@ const Linkslist = () => {
 
             <tr className={classes.tablebox}>
               <td>firstAppearance</td>
-              <td>Monster's first appeared on screen</td>
-              <td>String</td>
+              <td>Monster's first time appeared on screen (year)</td>
+              <td>Number</td>
             </tr>
 
             <tr className={classes.tablebox}>
