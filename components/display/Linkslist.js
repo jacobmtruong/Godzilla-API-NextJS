@@ -75,13 +75,13 @@ const Linkslist = () => {
           <tbody>
             <tr className={classes.tablebox}>
               <td>GET</td>
-              <td>/api/monster</td>
+              <td>/api/monsters</td>
               <td>Returns an array of all Monster in our database.</td>
             </tr>
 
             <tr className={classes.tablebox}>
               <td>GET</td>
-              <td>/api/monster/name/:name</td>
+              <td>/api/monsters/name/:name</td>
               <td>
                 Returns an array of Monster based on their name. The array will
                 contain one Monster.
@@ -90,7 +90,7 @@ const Linkslist = () => {
 
             <tr className={classes.tablebox}>
               <td>GET</td>
-              <td>/api/monster/year/:year</td>
+              <td>/api/monsters/year/:year</td>
               <td>
                 Returns an array of Monster based on the year they were created.
                 The array will contain one or more Monsters.
