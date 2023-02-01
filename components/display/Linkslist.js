@@ -124,9 +124,7 @@ const Linkslist = () => {
             <li className={classes.highlighted}>
               /api/monster/name/Mechagodzilla
             </li>
-            <li className={classes.highlighted}>
-              /api/monster/name/KingCaesar
-            </li>
+            <li className={classes.highlighted}>/api/monster/name/King_Kong</li>
             <li className={classes.highlighted}>/api/monster/year/1994</li>
           </ul>
         </ul>
