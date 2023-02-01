@@ -1,29 +1,38 @@
 import Link from "next/link";
 import Image from "next/image";
 import icon from "../../styles/images/icon.png";
+import classes from "../display/banner-style.module.css";
+import { useRouter } from "next/router";
 
 function PlaygroundBanner() {
   const portfolioLink = () => {
     window.open("https://jacobtruong.com");
   };
+
+  const router = useRouter();
+
   return (
-    <div className="banner-container">
-      <Image src={icon} alt="godzilaicon" className="icon-logo" />
-      <div className="logo-container">
-        <h1 className="logo" style={{ fontSize: "60px" }}>
+    <div className={classes.bannercontainer}>
+      <Image src={icon} alt="godzilaicon" className={classes.iconlogo} />
+      <div className={classes.logocontainer}>
+        <h1 className={classes.logo} style={{ fontSize: "60px" }}>
           Godzillapi
           <span style={{ fontSize: "15px", fontWeight: "0" }}>
             {" "}
             A simple project by{" "}
-            <Link href="" onClick={portfolioLink} className="profile">
+            <Link href="" onClick={portfolioLink} className={classes.profile}>
               Jacob Truong
             </Link>
           </span>
         </h1>
-        <h4 className="logo" style={{ fontSize: "35px" }}>
+        <h4 className={classes.logo} style={{ fontSize: "30px" }}>
           PLAYGROUND
         </h4>
-        <button className="playground" style={{ marginRight: "10px" }}>
+        <button
+          className={classes.playground}
+          onClick={() => router.push("/")}
+          style={{ marginRight: "10px" }}
+        >
           Home
         </button>
       </div>
