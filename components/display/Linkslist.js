@@ -18,33 +18,33 @@ const Linkslist = () => {
           </thead>
           <tbody>
             <tr className={classes.tablebox}>
+              <td>id</td>
+              <td>Monster's id</td>
+              <td>Number</td>
+            </tr>
+
+            <tr className={classes.tablebox}>
               <td>name</td>
               <td>Monster's name</td>
               <td>String</td>
             </tr>
 
             <tr className={classes.tablebox}>
-              <td>imgUrl</td>
+              <td>img</td>
               <td>Monster's image</td>
               <td>String</td>
             </tr>
 
             <tr className={classes.tablebox}>
-              <td>firstAppear</td>
+              <td>ability</td>
+              <td>Monster's abilities</td>
+              <td>String</td>
+            </tr>
+
+            <tr className={classes.tablebox}>
+              <td>firstAppearance</td>
               <td>Monster's first appeared on screen</td>
               <td>String</td>
-            </tr>
-
-            <tr className={classes.tablebox}>
-              <td>level</td>
-              <td>Monster's power level</td>
-              <td>String</td>
-            </tr>
-
-            <tr className={classes.tablebox}>
-              <td>yearCreated</td>
-              <td>Year monster was created</td>
-              <td>Number</td>
             </tr>
 
             <tr className={classes.tablebox}>
