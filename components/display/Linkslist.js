@@ -122,10 +122,12 @@ const Linkslist = () => {
           </p>
           <ul>
             <li className={classes.highlighted}>
-              /api/monster/name/Mechagodzilla
+              /api/monsters/name/Mechagodzilla
             </li>
-            <li className={classes.highlighted}>/api/monster/name/King_Kong</li>
-            <li className={classes.highlighted}>/api/monster/year/1994</li>
+            <li className={classes.highlighted}>
+              /api/monsters/name/King_Kong
+            </li>
+            <li className={classes.highlighted}>/api/monsters/year/1994</li>
           </ul>
         </ul>
       </div>
