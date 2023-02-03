@@ -4,6 +4,21 @@ import { useState } from "react";
 function PlaygroundForm() {
   const [year, setYear] = useState("");
   const [name, setName] = useState("");
+
+  async function getMonsterByName(e) {
+    e.preventDefault();
+    const res = await fetch(
+      `https://godzilla-api.vercel.app/api/monsters/name/${name}`
+    );
+    const data = await res.json();
+    console.log(data);
+    return {
+      props: {
+        monster: data[0],
+      },
+    };
+  }
+
   return (
     <div className={classes.formcontainer}>
       <div className={classes.formsmallcontainer}>
@@ -21,7 +36,7 @@ function PlaygroundForm() {
           <button className={classes.formbutton}>Submit</button>
         </form>
 
-        <form>
+        <form onSubmit={getMonsterByName}>
           <span className={classes.linkinput}>
             https://godzilla-api.vercel.app/playground/api/monsters/name/
           </span>
