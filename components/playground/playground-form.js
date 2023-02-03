@@ -23,7 +23,7 @@ function PlaygroundForm() {
 
         <form>
           <span className={classes.linkinput}>
-            localhost:3000/api/monster/name/
+            https://godzilla-api.vercel.app/playground/api/monsters/name/
           </span>
           <input
             style={{ width: "53.6%" }}

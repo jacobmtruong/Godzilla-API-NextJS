@@ -13,7 +13,13 @@ function Banner() {
 
   return (
     <div className={classes.bannercontainer}>
-      <Image src={icon} alt="godzilaicon" className={classes.iconlogo} />
+      <Image
+        src={icon}
+        alt="godzilaicon"
+        className={classes.iconlogo}
+        loading="eager"
+        priority={true}
+      />
       <div className={classes.logocontainer}>
         <h1 className={classes.logo} style={{ fontSize: "60px" }}>
           Godzillapi
