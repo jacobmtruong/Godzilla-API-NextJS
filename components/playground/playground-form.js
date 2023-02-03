@@ -1,5 +1,5 @@
 import classes from "../playground/playground-form.module.css";
-import DisplayResult from "../playground/displayresult";
+import DisplayResult from "./monster-card";
 import { useState } from "react";
 
 function PlaygroundForm() {
