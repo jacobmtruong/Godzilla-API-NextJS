@@ -19,6 +19,7 @@ function PlaygroundBanner() {
         className={classes.iconlogo}
         loading="eager"
         priority={true}
+        width="auto"
       />
       <div className={classes.logocontainer}>
         <h1 className={classes.logo} style={{ fontSize: "60px" }}>
