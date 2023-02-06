@@ -6,7 +6,7 @@ function PlaygroundForm() {
   const [year, setYear] = useState("");
   const [name, setName] = useState("");
 
-  const [monsterName, setMonsterName] = useState("");
+  const [monster, setMonster] = useState("");
 
   async function getMonsterByName(e) {
     e.preventDefault();
@@ -14,7 +14,7 @@ function PlaygroundForm() {
       `https://godzilla-api.vercel.app/api/monsters/name/${name}`
     );
     const data = await res.json();
-    setMonsterName(data);
+    setMonster(data);
   }
 
   async function getMonsterByYear(e) {
@@ -23,7 +23,7 @@ function PlaygroundForm() {
       `https://godzilla-api.vercel.app/api/monsters/year/${year}}`
     );
     const data = await res.json();
-    setMonsterName(data);
+    setMonster(data);
   }
 
   return (
@@ -58,7 +58,7 @@ function PlaygroundForm() {
         </form>
       </div>
 
-      <DisplayResult monster={monsterName} />
+      <DisplayResult monster={monster} />
     </div>
   );
 }

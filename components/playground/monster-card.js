@@ -35,7 +35,7 @@ function DisplayResult(props) {
       </div>
     );
   } else {
-    <h1>Loading...</h1>;
+    <h1>Couldn't find monster</h1>;
   }
 }
 export default DisplayResult;
