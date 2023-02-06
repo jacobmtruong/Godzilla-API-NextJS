@@ -34,6 +34,8 @@ function DisplayResult(props) {
         </a>
       </div>
     );
+  } else {
+    <h1>Loading...</h1>;
   }
 }
 export default DisplayResult;
