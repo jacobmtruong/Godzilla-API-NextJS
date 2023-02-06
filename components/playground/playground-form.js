@@ -17,35 +17,44 @@ function PlaygroundForm() {
     setMonsterName(data);
   }
 
+  async function getMonsterByYear(e) {
+    e.preventDefault();
+    const res = await fetch(
+      `https://godzilla-api.vercel.app/api/monsters/year/${year}}`
+    );
+    const data = await res.json();
+    setMonsterName(data);
+  }
+
   return (
     <div className={classes.formcontainer}>
       <div className={classes.formsmallcontainer}>
-        <form>
+        <form onSubmit={getMonsterByYear}>
           <span className={classes.linkinput}>
-            localhost:3000/api/monster/year/
+            https://godzilla-api.vercel.app/api/monsters/year/
           </span>
           <input
-            style={{ width: "55%" }}
+            style={{ width: "40%" }}
             type="number"
             onChange={(e) => setYear(e.target.value)}
             placeholder=":year"
             value={year}
           />
-          <button className={classes.formbutton}>Submit</button>
+          <button className={classes.formbutton}>Find</button>
         </form>
 
         <form onSubmit={getMonsterByName}>
           <span className={classes.linkinput}>
-            https://godzilla-api.vercel.app/playground/api/monsters/name/
+            https://godzilla-api.vercel.app/api/monsters/name/
           </span>
           <input
-            style={{ width: "53.6%" }}
+            style={{ width: "40%" }}
             type="text"
             onChange={(e) => setName(e.target.value)}
             placeholder=":name"
             value={name}
           />
-          <button className={classes.formbutton}>Submit</button>
+          <button className={classes.formbutton}>Find</button>
         </form>
       </div>
 
