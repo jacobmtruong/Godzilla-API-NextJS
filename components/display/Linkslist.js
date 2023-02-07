@@ -111,11 +111,17 @@ const Linkslist = () => {
         <ul style={{ margin: "0" }}>
           <li>
             Get the full list of Monster:{" "}
-            <span className={classes.apiroute}>/api/monster</span>
+            <span className={classes.apiroute}>/api/monsters</span>
           </li>
           <li>
             Query the API for a specific Monster by name by passing the name in
-            the URL: <span className={classes.apiroute}>/api/monster/name</span>
+            the URL:{" "}
+            <span className={classes.apiroute}>/api/monsters/name</span>
+          </li>
+          <li>
+            Query the API for a specific Monster by first year appeared on
+            screen by passing the year in the URL:{" "}
+            <span className={classes.apiroute}>/api/monsters/year</span>
           </li>
           <p className={classes.example}>
             Capitlize the first intial of the monster's name. Examples:
