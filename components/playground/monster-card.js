@@ -35,8 +35,12 @@ function DisplayResult(props) {
         </a>
       </div>
     );
-  } else {
-    <h1>Couldn't find monster</h1>;
   }
+  return (
+    <>
+      <h1>Loading</h1>
+      {console.log("Hello")}
+    </>
+  );
 }
 export default DisplayResult;

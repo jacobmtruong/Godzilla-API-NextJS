@@ -18,7 +18,6 @@ function PlaygroundForm() {
     const data = await res.json();
     setMonster(data);
     setLoading(false);
-    console.log(isLoading);
   }
 
   async function getMonsterByYear(e) {
@@ -28,6 +27,7 @@ function PlaygroundForm() {
     );
     const data = await res.json();
     setMonster(data);
+    setLoading(false);
   }
 
   return (
