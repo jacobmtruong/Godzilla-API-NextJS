@@ -3,9 +3,10 @@ import Image from "next/image";
 
 function DisplayResult(props) {
   const monster = props.monster;
+  const isLoading = props.isLoading;
   console.log(monster);
 
-  if (monster) {
+  if (!isLoading) {
     return (
       <div className={classes.monstercard}>
         <p style={{ fontSize: "35px", fontWeight: "600" }}>{monster.name}</p>

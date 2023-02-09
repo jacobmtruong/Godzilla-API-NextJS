@@ -6,6 +6,8 @@ function PlaygroundForm() {
   const [year, setYear] = useState("");
   const [name, setName] = useState("");
 
+  const [isLoading, setLoading] = useState(true);
+
   const [monster, setMonster] = useState("");
 
   async function getMonsterByName(e) {
@@ -15,6 +17,8 @@ function PlaygroundForm() {
     );
     const data = await res.json();
     setMonster(data);
+    setLoading(false);
+    console.log(isLoading);
   }
 
   async function getMonsterByYear(e) {
@@ -58,7 +62,7 @@ function PlaygroundForm() {
         </form>
       </div>
 
-      <DisplayResult monster={monster} />
+      <DisplayResult monster={monster} isLoading={isLoading} />
     </div>
   );
 }
